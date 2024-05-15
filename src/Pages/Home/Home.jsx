@@ -1,13 +1,32 @@
 import { Link } from 'react-router-dom'
 import './Home.css';
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
+import './Home.css';
 
 function Home() {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["coder", "Frontend Developer","Software Engineer", "Data Scientist"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1500
+    });
+
+    // Nettoyage à la désinscription
+    return () => {
+      typed.destroy();
+    };
+  }, []);  
   return (
     <main>
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
-            Hi, I'am <br /><span class="multiText"></span><br />
+            Hi, I'am <br /><span ref={el}></span><br />
           </h1>
         </div>
 
