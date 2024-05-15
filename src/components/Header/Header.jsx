@@ -12,19 +12,19 @@ function Header() {
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link href="#home" className="nav__link active-link">Home</Link>
+                            <Link to="#home" className="nav__link active-link">Home</Link>
                         </li>
                         <li className="nav__item">
-                            <Link href="#about" className="nav__link">About</Link>
+                            <Link to="#about" className="nav__link">About</Link>
                         </li>
                         <li className="nav__item">
-                            <Link href="#skills" className="nav__link">Skills</Link>
+                            <Link to="#skills" className="nav__link">Skills</Link>
                         </li>
                         <li className="nav__item">
-                            <Link href="#work" className="nav__link">Work</Link>
+                            <Link to="#work" className="nav__link">Work</Link>
                         </li>
                         <li className="nav__item">
-                            <Link href="#contact" className="nav__link">Contact</Link>
+                            <Link to="#contact" className="nav__link">Contact</Link>
                         </li>
                     </ul>
                 </div>
