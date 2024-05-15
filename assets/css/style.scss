@@ -183,7 +183,10 @@ img{
     position: relative;
     row-gap: 5rem;
     padding: 4rem 0 5rem;
-
+    .multiText{
+        color: #7f00ff;
+        text-transform: capitalize;
+    }
     &__data{
         align-self: center;
     }

@@ -184,6 +184,10 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
+.home .multiText {
+  color: #7f00ff;
+  text-transform: capitalize;
+}
 .home__data {
   align-self: center;
 }

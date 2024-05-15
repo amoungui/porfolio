@@ -62,7 +62,7 @@
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
-            Hi,<br /><span class="multiText"></span><br />
+            Hi, I'am <br /><span class="multiText"></span><br />
           </h1>
         </div>
 
@@ -248,10 +248,19 @@
       </div>
       <p class="footer__copy">&#169; Amoungui. All rigths reserved</p>
     </footer>
-
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+       var typingEffect = new Typed(".multiText",{
+          strings : ["coder", "Frontend Developer","Software Engineer", "Data Scientist"],
+          loop : true,
+          typeSpeed : 100,
+          backSpeed : 80,
+          backDelay : 1500
+       })
+    </script>
   </body>
 </html>
