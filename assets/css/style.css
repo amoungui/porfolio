@@ -10,6 +10,7 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --third-color: #7f00ff;
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -261,9 +262,11 @@ img {
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  text-align: center;
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  text-align: center;
 }
 .skills__data {
   display: flex;
@@ -303,8 +306,8 @@ img {
 .skills__js {
   width: 65%;
 }
-.skills__ux {
-  width: 85%;
+.skills__react {
+  width: 65%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -466,8 +469,8 @@ img {
     width: 300px;
   }
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    /*grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem; */
     align-items: center;
     text-align: initial;
   }
