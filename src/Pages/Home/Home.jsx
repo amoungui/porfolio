@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+import { Link } from 'react-router-dom'
 import './Home.css';
 
 function Home() {
@@ -12,9 +12,9 @@ function Home() {
         </div>
 
         <div class="home__social">
-          <a href="" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <Link to="/" className="home__social-icon"><i class="bx bxl-linkedin"></i></Link>
+          <Link to="/" className="home__social-icon"><i class="bx bxl-instagram"></i></Link>
+          <Link to="/" className="home__social-icon"><i class="bx bxl-github"></i></Link>
         </div>
 
         <div class="home__img">
@@ -125,24 +125,24 @@ function Home() {
         <h2 class="section-title">Work</h2>
 
         <div class="work__container bd-grid">
-          <a href="" class="work__img">
+          <Link to="/" className="work__img">
             <img src="assets/img/work1.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
+          </Link>
+          <Link to="/" className="work__img">
             <img src="assets/img/work2.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
+          </Link>
+          <Link to="/" className="work__img">
             <img src="assets/img/work3.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
+          </Link>
+          <Link to="/" className="work__img">
             <img src="assets/img/work4.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
+          </Link>
+          <Link to="/" className="work__img">
             <img src="assets/img/work5.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
+          </Link>
+          <Link to="/" className="work__img">
             <img src="assets/img/work6.jpg" alt="" />
-          </a>
+          </Link>
         </div>
       </section>
 
