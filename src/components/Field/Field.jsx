@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 
+import "./style.scss";
+
 export const FIELD_TYPES = {
   INPUT_TEXT: 1,
   TEXTAREA: 2,

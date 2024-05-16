@@ -6,6 +6,7 @@ import Form from '../../containers/Form/Form'
 import SkillsCard from '../../components/SkillsCard/SkillsCard'
 import Image from '../../components/Image/Image'
 import Typed from 'typed.js';
+
 import './Home.css';
 
 // Importation de la fonction v4 (pour générer des UUID) depuis la bibliothèque 'uuid'
@@ -77,6 +78,7 @@ function Home() {
           <div class="about__container bd-grid">
             <div class="about__img">
               <Image
+                className="img-clip"
                 imageSrc="assets/img/Capture d'écran 2024-05-15 071954.png"
                 imageAlt="Image profil"
               />
@@ -184,7 +186,7 @@ function Home() {
         <section className="contact section" id="contact">
           <h2 className="section-title">Contact</h2>
 
-          <div className="contact__container bd-grid">
+          <div className="bd-grid">
             <Modal
               Content={
                 <div className="ModalMessage--success">
