@@ -7,6 +7,12 @@ import SkillsCard from '../../components/SkillsCard/SkillsCard'
 import Typed from 'typed.js';
 import './Home.css';
 
+// Importation de la fonction v4 (pour générer des UUID) depuis la bibliothèque 'uuid'
+import { v4 } from 'uuid';
+
+// Création d'un alias pour la fonction v4
+const uuidv4 = v4;
+
 function Home() {
   const el = useRef(null);
 
@@ -103,24 +109,28 @@ function Home() {
                 skillsPercentage="95%"
                 classNameBxl="bx bxl-html5 skills__icon"
                 classNameSkill="skills__bar skills__html"
+                key={`SkillsCard-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="CSS3"
                 skillsPercentage="85%"
                 classNameBxl="bx bxl-css3 skills__icon"
                 classNameSkill="skills__bar skills__css"
+                key={`SkillsCard-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="JAVASCRIPT"
                 skillsPercentage="65%"
                 classNameBxl="bx bxl-javascript skills__icon"
                 classNameSkill="skills__bar skills__js"
+                key={`SkillsCard-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="REACT"
                 skillsPercentage="65%"
                 classNameBxl="bx bxs-paint skills__icon"
                 classNameSkill="skills__bar skills__react"
+                key={`SkillsCard-item-${uuidv4()}`}
               />
             </div>
 
