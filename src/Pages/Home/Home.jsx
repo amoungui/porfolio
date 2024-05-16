@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 import React, { useEffect, useRef } from 'react';
+import Card from '../../components/Card/Card'
+import Modal from '../../containers/Modal/Modal'
+import Form from '../../containers/Form/Form'
 import Typed from 'typed.js';
 import './Home.css';
 
@@ -143,47 +146,61 @@ function Home() {
           <h2 class="section-title">Work</h2>
 
           <div class="work__container bd-grid">
-            <Link to="/" className="work__img">
-              <img src="assets/img/work1.jpg" alt="" />
-            </Link>
-            <Link to="/" className="work__img">
-              <img src="assets/img/work2.jpg" alt="" />
-            </Link>
-            <Link to="/" className="work__img">
-              <img src="assets/img/work3.jpg" alt="" />
-            </Link>
-            <Link to="/" className="work__img">
-              <img src="assets/img/work4.jpg" alt="" />
-            </Link>
-            <Link to="/" className="work__img">
-              <img src="assets/img/work5.jpg" alt="" />
-            </Link>
-            <Link to="/" className="work__img">
-              <img src="assets/img/work6.jpg" alt="" />
-            </Link>
+            <Card
+              imageSrc="assets/img/work1.jpg"
+              imageAlt="kasa img"
+              data-testid="work-item-1-image-testid"
+            />
+            <Card
+              imageSrc="assets/img/work2.jpg"
+              imageAlt="Print it"
+              data-testid="work-item-2-image-testid"
+            />
+            <Card
+              imageSrc="assets/img/work3.jpg"
+              imageAlt="724 Events"
+              data-testid="work-item-3-image-testid"
+            />
+            <Card
+              imageSrc="assets/img/work4.jpg"
+              imageAlt="Booki"
+              data-testid="work-item-4-image-testid"
+            />                        
+            <Card
+              imageSrc="assets/img/work5.jpg"
+              imageAlt="Ohmyfood"
+              data-testid="work-item-5-image-testid"
+            />
+            <Card
+              imageSrc="assets/img/work6.jpg"
+              imageAlt="Nina carducci"
+              data-testid="work-item-6-image-testid"
+            />
           </div>
         </section>
 
-        <section class="contact section" id="contact">
-          <h2 class="section-title">Contact</h2>
+        <section className="contact section" id="contact">
+          <h2 className="section-title">Contact</h2>
 
-          <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="mail" placeholder="Email" class="contact__input" />
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="10"
-                class="contact__input"
-              ></textarea>
-              <input
-                type="button"
-                value="Contact"
-                class="contact__button button"
-              />
-            </form>
+          <div className="contact__container bd-grid">
+            <Modal
+              Content={
+                <div className="ModalMessage--success">
+                  <div>Message envoyé !</div>
+                  <p>
+                    Merci pour votre message nous tâcherons de vous répondre dans
+                    les plus brefs délais
+                  </p>
+                </div>
+              }
+            >
+              {({ setIsOpened }) => (
+                <Form
+                  onSuccess={() => setIsOpened(true)}
+                  onError={() => null}
+                />
+              )}
+            </Modal>
           </div>
         </section>
       </main>
