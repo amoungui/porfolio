@@ -1,0 +1,74 @@
+@import "src/colors.scss";
+
+/*main {
+  background-color: $primary;
+}*/
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  .Title {
+    color: white;
+    margin-bottom: 64px;
+  }
+  span {
+    color: white;
+  }
+  .Button {
+    width: 207px;
+    margin-top: 32px;
+  }
+}
+
+.Title {
+  font-size: 50px;
+  font-family: "Space Grotesk", sans-serif;
+  color: $primary;
+  margin: 0;
+  margin-top: 64px;
+}
+p {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.Pagination {
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+    margin: 2px;
+  }
+  margin-bottom: 50px;
+}
+
+.ModalMessage--success {
+  font-family: "Manrope", sans-serif;
+  padding: 32px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  div {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: $primary;
+  }
+  p {
+    max-width: 360px;
+  }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}

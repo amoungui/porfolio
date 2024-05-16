@@ -7,7 +7,7 @@ import SkillsCard from '../../components/SkillsCard/SkillsCard'
 import Image from '../../components/Image/Image'
 import Typed from 'typed.js';
 
-import './Home.css';
+import './style.scss';
 
 // Importation de la fonction v4 (pour générer des UUID) depuis la bibliothèque 'uuid'
 import { v4 } from 'uuid';
