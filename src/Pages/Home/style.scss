@@ -3,6 +3,33 @@
 /*main {
   background-color: $primary;
 }*/
+.about {
+  background-color: $primary;
+  .section-title{
+    color: #ffff;
+
+    &::after{
+        background-color: #fff;
+    }
+  }
+  .about__subtitle {
+    color: #ffff;
+  }
+  .about__text{
+    color: #ffff;
+  }
+}
+
+.contact {
+  background-color: $primary;
+  .section-title{
+    color: #ffff;
+
+    &::after{
+        background-color: #fff;
+    }
+  }  
+}
 
 .FormContainer {
   display: flex;
