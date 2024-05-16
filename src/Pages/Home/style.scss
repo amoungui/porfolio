@@ -3,8 +3,10 @@
 /*main {
   background-color: $primary;
 }*/
+
 .about {
   background-color: $primary;
+  clip-path: ellipse(100% 100% at 50% 0%);
   .section-title{
     color: #ffff;
 
@@ -22,6 +24,7 @@
 
 .contact {
   background-color: $primary;
+  clip-path: ellipse(100% 100% at 50% 100%);
   .section-title{
     color: #ffff;
 
