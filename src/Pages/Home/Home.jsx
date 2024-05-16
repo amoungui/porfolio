@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card'
 import Modal from '../../containers/Modal/Modal'
 import Form from '../../containers/Form/Form'
 import SkillsCard from '../../components/SkillsCard/SkillsCard'
+import Image from '../../components/Image/Image'
 import Typed from 'typed.js';
 import './Home.css';
 
@@ -75,9 +76,9 @@ function Home() {
 
           <div class="about__container bd-grid">
             <div class="about__img">
-              <img
-                src="assets/img/Capture d'écran 2024-05-15 071954.png"
-                alt=""
+              <Image
+                imageSrc="assets/img/Capture d'écran 2024-05-15 071954.png"
+                imageAlt="Image profil"
               />
             </div>
 
