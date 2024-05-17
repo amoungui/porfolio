@@ -3,10 +3,16 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState('home');
 
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
+
+    const setLinkActive = (to) => {
+      setActiveLink(to);
+    };
+
     return (
         <header className="l-header">
             <nav className="nav bd-grid">
@@ -17,19 +23,19 @@ function Header() {
                 <div className={`nav__menu ${isMenuOpen ? 'show' : ''}`} id="nav-menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <ScrollLink to="home" smooth={false} className="nav__link active-link">Home</ScrollLink>
+                            <ScrollLink to="home" spy={true} smooth={false} className={`nav__link ${activeLink === 'home' ? 'active-link' : ''}`} onSetActive={setLinkActive}>Home</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <ScrollLink to="about" smooth={false} className="nav__link">About</ScrollLink>
+                            <ScrollLink to="about" spy={true} smooth={false} className={`nav__link ${activeLink === 'about' ? 'active-link' : ''}`} onSetActive={setLinkActive}>About</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <ScrollLink to="skills" smooth={false} className="nav__link">Skills</ScrollLink>
+                            <ScrollLink to="skills" spy={true} smooth={false} className={`nav__link ${activeLink === 'skills' ? 'active-link' : ''}`} onSetActive={setLinkActive}>Skills</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <ScrollLink to="work" smooth={false} className="nav__link">Work</ScrollLink>
+                            <ScrollLink to="work" spy={true} smooth={false} className={`nav__link ${activeLink === 'work' ? 'active-link' : ''}`} onSetActive={setLinkActive}>Work</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <ScrollLink to="contact" smooth={false} className="nav__link">Contact</ScrollLink>
+                            <ScrollLink to="contact" spy={true} smooth={false} className={`nav__link ${activeLink === 'contact' ? 'active-link' : ''}`} onSetActive={setLinkActive}>Contact</ScrollLink>
                         </li>
                     </ul>
                 </div>
@@ -42,4 +48,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;
