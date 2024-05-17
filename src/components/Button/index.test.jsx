@@ -2,7 +2,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 
 // Importation du composant 'Button' et de l'objet 'BUTTON_TYPES' depuis le répertoire courant
-import Button, { BUTTON_TYPES } from "./Button";
+import Button, { BUTTON_TYPES } from "./index";
 
 // Début de la description des tests pour le composant 'Button'
 describe("When a button is created", () => {

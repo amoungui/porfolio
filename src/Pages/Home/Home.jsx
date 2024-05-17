@@ -183,7 +183,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="contact section" id="contact">
+        <section className="contact section FormContainer" id="contact">
           <h2 className="section-title">Contact</h2>
 
           <div className="bd-grid">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,25 +11,25 @@ function Header() {
         <header className="l-header">
             <nav className="nav bd-grid">
                 <div>
-                    <Link to="/" className="nav__logo">Amoungui.</Link>
+                    <ScrollLink to="/" smooth={true} className="nav__logo">Amoungui.</ScrollLink>
                 </div>
     
                 <div className={`nav__menu ${isMenuOpen ? 'show' : ''}`} id="nav-menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="#home" className="nav__link active-link">Home</Link>
+                            <ScrollLink to="home" smooth={false} className="nav__link active-link">Home</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#about" className="nav__link">About</Link>
+                            <ScrollLink to="about" smooth={false} className="nav__link">About</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#skills" className="nav__link">Skills</Link>
+                            <ScrollLink to="skills" smooth={false} className="nav__link">Skills</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#work" className="nav__link">Work</Link>
+                            <ScrollLink to="work" smooth={false} className="nav__link">Work</ScrollLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#contact" className="nav__link">Contact</Link>
+                            <ScrollLink to="contact" smooth={false} className="nav__link">Contact</ScrollLink>
                         </li>
                     </ul>
                 </div>
