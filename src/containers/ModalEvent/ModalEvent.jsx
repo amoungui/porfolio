@@ -19,10 +19,6 @@ const ModalEvent = ({ event }) => (
         <div>{event.description}</div>
       </div>
       <div className="ModalEvent__descriptionContainer">
-        <h3>Participants</h3>
-        <div>{event.nb_guesses} participants</div>
-      </div>
-      <div className="ModalEvent__descriptionContainer">
         <h3>Prestations</h3>
         {event.prestations.map((presta) => (
           <div key={presta}>{presta}</div>
