@@ -13,6 +13,7 @@ const EventList = () => {
 
   useEffect(() => {
     let events = data?.events || [];
+    console.log('kjhdgkjdgkj: ', events);
     setFilteredEvents(events.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE));
   }, [currentPage, data]);
 
@@ -28,12 +29,11 @@ const EventList = () => {
               <Modal key={event.id} Content={<ModalEvent event={event} />}>
                 {({ setIsOpened }) => (
                   <Card
-                    onClick={() => setIsOpened(true)}
-                    imageSrc={event.cover}
-                    title={event.title}
-                    date={new Date(event.date)}
-                    label={event.type}
-                  />
+                  onClick={() => setIsOpened(true)}
+                  imageSrc={event.cover}
+                  imageAlt={event.title} // Ajout de la prop imageAlt
+                  dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
+                />                
                 )}
               </Modal>
             ))}

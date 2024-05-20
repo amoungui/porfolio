@@ -7,17 +7,8 @@ import { v4 } from 'uuid';
 // Création d'un alias pour la fonction v4
 const uuidv4 = v4;
 
-const Card = ({
-  imageSrc,
-  imageAlt,
-  dataTestid,
-  date = new Date(),
-  title,
-  label,
-  small = false,
-  ...props
-}) => (
-    <Link to="/" className="work__img">
+const Card = ({ imageSrc, imageAlt="image", dataTestid, onClick }) => ( // Ajout de la prop onClick
+    <Link to="/" className="work__img" onClick={onClick}>
         <Image 
         data-testid={dataTestid}
         key={`Image-item-${uuidv4()}`}
@@ -25,21 +16,13 @@ const Card = ({
         imageAlt={imageAlt}
         />
     </Link>
+);
 
-  );
 
 Card.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
-  date: PropTypes.instanceOf(Date).isRequired,
-  title: PropTypes.string.isRequired,
-  small: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
-  
-Card.defaultProps = {
-  imageAlt: "image",
-  small: false,
-}
 
 export default Card;

@@ -34,22 +34,22 @@ function Home() {
   }, []);  
   return (
       <main>
-        <section class="home bd-grid" id="home">
-          <div class="home__data">
-            <h1 class="home__title">
+        <section className="home bd-grid" id="home">
+          <div className="home__data">
+            <h1 className="home__title">
               Hi, I'am <br /><span ref={el}></span><br />
             </h1>
           </div>
 
-          <div class="home__social">
+          <div className="home__social">
             <Link to="/" className="home__social-icon"><i class="bx bxl-linkedin"></i></Link>
             <Link to="/" className="home__social-icon"><i class="bx bxl-instagram"></i></Link>
             <Link to="/" className="home__social-icon"><i class="bx bxl-github"></i></Link>
           </div>
 
-          <div class="home__img">
+          <div className="home__img">
             <svg
-              class="home__blob"
+              className="home__blob"
               viewBox="0 0 479 467"
             >
               <mask id="mask0" mask-type="alpha">
@@ -72,11 +72,11 @@ function Home() {
           </div>
         </section>
 
-        <section class="about section" id="about">
-          <h2 class="section-title">About</h2>
+        <section className="about section" id="about">
+          <h2 className="section-title">About</h2>
 
-          <div class="about__container bd-grid">
-            <div class="about__img">
+          <div className="about__container bd-grid">
+            <div className="about__img">
               <Image
                 className="img-clip"
                 imageSrc="assets/img/Capture d'écran 2024-05-15 071954.png"
@@ -85,8 +85,8 @@ function Home() {
             </div>
 
             <div>
-              <h2 class="about__subtitle">I'am Amoungui</h2>
-              <p class="about__text">
+              <h2 className="about__subtitle">I'am Amoungui</h2>
+              <p className="about__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
                 ut voluptates soluta, aut earum nemo recusandae cumque
@@ -96,13 +96,13 @@ function Home() {
           </div>
         </section>
 
-        <section class="skills section" id="skills">
-          <h2 class="section-title">Skills</h2>
+        <section className="skills section" id="skills">
+          <h2 className="section-title">Skills</h2>
 
-          <div class="skills__container bd-grid">
+          <div className="skills__container bd-grid">
             <div>
-              <h2 class="skills__subtitle">Profesional Skills</h2>
-              <p class="skills__text">
+              <h2 className="skills__subtitle">Profesional Skills</h2>
+              <p className="skills__text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
                 optio id vero amet, alias architecto consectetur error eum eaque
                 sit.
@@ -140,12 +140,10 @@ function Home() {
           </div>
         </section>
 
-        <section class="work section" id="work">
-          <h2 class="section-title">Work</h2>
+        <section className="work section" id="work">
+          <h2 className="section-title">Work</h2>
 
-          <div class="work__container bd-grid">
-            <EventList />
-          </div>
+          <div className="work__container bd-grid"><EventList /></div>
         </section>
 
         <section className="contact section FormContainer" id="contact">
