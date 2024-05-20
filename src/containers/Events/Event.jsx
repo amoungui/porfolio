@@ -24,20 +24,18 @@ const EventList = () => {
         "loading"
       ) : (
         <>
-          <div id="events" className="ListContainer">
-            {filteredEvents.map((event) => (
-              <Modal key={event.id} Content={<ModalEvent event={event} />}>
-                {({ setIsOpened }) => (
-                  <Card
-                  onClick={() => setIsOpened(true)}
-                  imageSrc={event.cover}
-                  imageAlt={event.title} // Ajout de la prop imageAlt
-                  dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
-                />                
-                )}
-              </Modal>
-            ))}
-          </div>
+          {filteredEvents.map((event) => (
+            <Modal key={event.id} Content={<ModalEvent event={event} />}>
+              {({ setIsOpened }) => (
+                <Card
+                onClick={() => setIsOpened(true)}
+                imageSrc={event.cover}
+                imageAlt={event.title} // Ajout de la prop imageAlt
+                dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
+              />                
+              )}
+            </Modal>
+          ))}
           <div className="Pagination">
             {[...Array(Math.ceil((data?.events.length || 0) / PER_PAGE))].map((_, n) => (
               // eslint-disable-next-line react/no-array-index-key
