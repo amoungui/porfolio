@@ -7,7 +7,16 @@ import { v4 } from 'uuid';
 // Création d'un alias pour la fonction v4
 const uuidv4 = v4;
 
-const Card = ({ imageSrc, imageAlt, dataTestid }) => (
+const Card = ({
+  imageSrc,
+  imageAlt,
+  dataTestid,
+  date = new Date(),
+  title,
+  label,
+  small = false,
+  ...props
+}) => (
     <Link to="/" className="work__img">
         <Image 
         data-testid={dataTestid}
@@ -22,11 +31,15 @@ const Card = ({ imageSrc, imageAlt, dataTestid }) => (
 Card.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
+  title: PropTypes.string.isRequired,
+  small: PropTypes.bool,
+  label: PropTypes.string.isRequired,
 };
-
+  
 Card.defaultProps = {
-  imageAlt: "image"
+  imageAlt: "image",
+  small: false,
 }
 
 export default Card;

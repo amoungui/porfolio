@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import React, { useEffect, useRef } from 'react';
-import Card from '../../components/Card/Card'
 import Modal from '../../containers/Modal/Modal'
 import Form from '../../containers/Form/Form'
 import SkillsCard from '../../components/SkillsCard/SkillsCard'
+import EventList from "../../containers/Events/Event";
 import Image from '../../components/Image/Image'
 import Typed from 'typed.js';
 
@@ -144,42 +144,7 @@ function Home() {
           <h2 class="section-title">Work</h2>
 
           <div class="work__container bd-grid">
-            <Card
-              imageSrc="assets/img/work1.jpg"
-              imageAlt="kasa img"
-              data-testid="work-item-1-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />
-            <Card
-              imageSrc="assets/img/work2.jpg"
-              imageAlt="Print it"
-              data-testid="work-item-2-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />
-            <Card
-              imageSrc="assets/img/work3.jpg"
-              imageAlt="724 Events"
-              data-testid="work-item-3-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />
-            <Card
-              imageSrc="assets/img/work4.jpg"
-              imageAlt="Booki"
-              data-testid="work-item-4-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />                        
-            <Card
-              imageSrc="assets/img/work5.jpg"
-              imageAlt="Ohmyfood"
-              data-testid="work-item-5-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />
-            <Card
-              imageSrc="assets/img/work6.jpg"
-              imageAlt="Nina carducci"
-              data-testid="work-item-6-image-testid"
-              key={`Card-item-${uuidv4()}`}
-            />
+            <EventList />
           </div>
         </section>
 
