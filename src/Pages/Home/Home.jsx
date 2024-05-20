@@ -15,7 +15,7 @@ import { v4 } from 'uuid';
 // Création d'un alias pour la fonction v4
 const uuidv4 = v4;
 
-function Home() {
+const Home = () => {
   const el = useRef(null);
 
   useEffect(() => {

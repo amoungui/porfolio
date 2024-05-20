@@ -28,11 +28,11 @@ const EventList = () => {
             <Modal key={event.id} Content={<ModalEvent event={event} />}>
               {({ setIsOpened }) => (
                 <Card
-                onClick={() => setIsOpened(true)}
-                imageSrc={event.cover}
-                imageAlt={event.title} // Ajout de la prop imageAlt
-                dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
-              />                
+                  onClick={() => setIsOpened(true)}
+                  imageSrc={event.cover}
+                  imageAlt={event.title} // Ajout de la prop imageAlt
+                  dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
+                />             
               )}
             </Modal>
           ))}
