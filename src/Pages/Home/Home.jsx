@@ -109,32 +109,39 @@ const Home = () => {
               </p>
               <SkillsCard 
                 skillsName="HTML5"
-                skillsPercentage="95%"
+                skillsPercentage=""
                 classNameBxl="bx bxl-html5 skills__icon"
                 classNameSkill="skills__bar skills__html"
-                key={`SkillsCard-item-${uuidv4()}`}
+                key={`SkillsCard-1-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="CSS3"
-                skillsPercentage="85%"
+                skillsPercentage=""
                 classNameBxl="bx bxl-css3 skills__icon"
                 classNameSkill="skills__bar skills__css"
-                key={`SkillsCard-item-${uuidv4()}`}
+                key={`SkillsCard-2-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="JAVASCRIPT"
-                skillsPercentage="65%"
+                skillsPercentage=""
                 classNameBxl="bx bxl-javascript skills__icon"
                 classNameSkill="skills__bar skills__js"
-                key={`SkillsCard-item-${uuidv4()}`}
+                key={`SkillsCard-3-item-${uuidv4()}`}
+              />
+              <SkillsCard 
+                skillsName="SEO"
+                skillsPercentage=""
+                classNameBxl="bx bxl-html5 skills__icon"
+                classNameSkill="skills__bar skills__html"
+                key={`SkillsCard-1-item-${uuidv4()}`}
               />
               <SkillsCard 
                 skillsName="REACT"
-                skillsPercentage="65%"
+                skillsPercentage=""
                 classNameBxl="bx bxs-paint skills__icon"
                 classNameSkill="skills__bar skills__react"
-                key={`SkillsCard-item-${uuidv4()}`}
-              />
+                key={`SkillsCard-4-item-${uuidv4()}`}
+              />              
             </div>
 
           </div>
