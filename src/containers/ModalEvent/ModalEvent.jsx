@@ -24,7 +24,7 @@ const ModalEvent = ({ event }) => (
         {event.prestations.map((presta) => (
           <div key={presta}>{presta}</div>
         ))}
-        <br /><span><b>Github:</b><Link to={event.github}>Source code here</Link></span>
+        <span><b>Github:</b><Link to={event.github}>Source code here</Link></span>
       </div>
     </div>
   );
