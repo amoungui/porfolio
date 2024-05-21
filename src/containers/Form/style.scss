@@ -1,6 +1,17 @@
 .contact_select {
   width: 60%;
 }
+
+/* Afficher le bouton "Envoyer" uniquement sur desktop */
+.desktop-device {
+  display: block;
+}
+
+/* Masquer le bouton "Envoyer" sur mobile */
+.mobile-device {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .contact_form {
     width: 100%;
@@ -14,4 +25,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  .desktop-device {
+    display: none;
+  }
+
+  .mobile-device {
+    display: block;
+  }  
 }

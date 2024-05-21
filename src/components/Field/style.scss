@@ -1,5 +1,14 @@
 @import "src/colors.scss";
 
+/* Afficher le bouton "Envoyer" uniquement sur desktop */
+.desktop-device {
+  display: block;
+}
+
+/* Masquer le bouton "Envoyer" sur mobile */
+.mobile-device {
+  display: none;
+}
 .inputField {
   display: flex;
   flex-direction: column;
@@ -51,10 +60,9 @@ textarea {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
   input {
     height: 60px;
-    min-width: 124px;
+    min-width: 100%;
     font-size: 16px;
     text-transform: capitalize;
     padding-left: 16px;
@@ -70,7 +78,7 @@ textarea {
   }
   textarea {
     height: 236px;
-    min-width: 124px;
+    min-width: 100%;
     font-size: 16px;
     padding: 16px;
     border-radius: 4px;
@@ -83,4 +91,11 @@ textarea {
   
     font-family: "Manrope", sans-serif;
   }
+  .desktop-device {
+    display: none;
+  }
+
+  .mobile-device {
+    display: block;
+  }  
 }
