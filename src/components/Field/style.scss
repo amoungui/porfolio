@@ -1,14 +1,5 @@
 @import "src/colors.scss";
 
-/* Afficher le bouton "Envoyer" uniquement sur desktop */
-.desktop-device {
-  display: block;
-}
-
-/* Masquer le bouton "Envoyer" sur mobile */
-.mobile-device {
-  display: none;
-}
 .inputField {
   display: flex;
   flex-direction: column;
@@ -90,12 +81,5 @@ textarea {
     }
   
     font-family: "Manrope", sans-serif;
-  }
-  .desktop-device {
-    display: none;
-  }
-
-  .mobile-device {
-    display: block;
   }  
 }
