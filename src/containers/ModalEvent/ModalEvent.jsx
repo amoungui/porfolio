@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom'
 import "./style.scss";
 
 const ModalEvent = ({ event }) => (
@@ -15,14 +16,15 @@ const ModalEvent = ({ event }) => (
         <div className="ModalEvent__titlePeriode">{event.periode}</div>
       </div>
       <div className="ModalEvent__descriptionContainer">
-        <h3>Description</h3>
+        <h4>Description</h4>
         <div>{event.description}</div>
       </div>
       <div className="ModalEvent__descriptionContainer">
-        <h3>Prestations</h3>
+        <h4>Compétences</h4>
         {event.prestations.map((presta) => (
           <div key={presta}>{presta}</div>
         ))}
+        <br /><span><b>Github:</b><Link to={event.github}>Source code here</Link></span>
       </div>
     </div>
   );

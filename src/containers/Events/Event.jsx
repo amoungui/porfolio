@@ -13,7 +13,6 @@ const EventList = () => {
 
   useEffect(() => {
     let events = data?.events || [];
-    console.log('kjhdgkjdgkj: ', events);
     setFilteredEvents(events.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE));
   }, [currentPage, data]);
 

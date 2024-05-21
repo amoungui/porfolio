@@ -7,12 +7,10 @@
             "title": "Kasa",
             "cover": "/assets/img/work1.jpg",
             "description": "Plateforme immobilière.",
-            "nb_guesses": 900,
+            "github": "https://github.com/amoungui/kasa-using-reactjs",
             "periode": "14-15-16 Avril",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "1 espace de restaurations"
+                "JavaScript/React 35.9% SCSS 34.5% CSS 26.7% HTML 2.9%"
             ]
         },
         {
@@ -22,12 +20,10 @@
             "title": "Print it",
             "cover": "assets/img/work2.jpg",
             "description": "Site vitrine d'une agence d'impression dans tous les formats",
-            "nb_guesses": 1300,
+            "github": "https://github.com/amoungui/print-it",
             "periode": "24-25-26 Février",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "1 site web dédié"
+                "HTML 39.0% CSS 38.9% JavaScript 22.1%"
             ]
         },
         {
@@ -37,12 +33,10 @@
             "title": "724Events",
             "cover": "assets/img/work3.jpg",
             "description": "Présentation des outils analytics aux professionnels du secteur ",
-            "nb_guesses": 1300,
+            "github": "https://github.com/amoungui/Debuggez-une-application-React",
             "periode": "24-25-26 Février",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "1 site web dédié"
+                "JavaScript/React 82.5% SCSS 12.5% CSS 3.4% HTML 1.6%"
             ]
         },
         {
@@ -52,13 +46,10 @@
             "title": "Booki",
             "cover": "/assets/img/work4.jpg",
             "description": "Présentation des outils analytics aux professionnels du secteur ",
-            "nb_guesses": 1300,
+            "github": "https://github.com/amoungui/booki",
             "periode": "24-25-26 Février",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "2 espaces de restaurations",
-                "1 site web dédié"
+                "HTML 52.8% CSS 47.2%"
             ]
         },
         {
@@ -68,13 +59,10 @@
             "title": "Ohmyfood",
             "cover": "/assets/img/work5.jpg",
             "description": "Présentation des plats des diffèrents restaurants ",
-            "nb_guesses": 1300,
+            "github": "https://github.com/amoungui/ohmyfood",
             "periode": "24-25-26 Février",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "2 espaces de restaurations",
-                "1 site web dédié"
+                "HTML 65.0% SCSS 35.0%"
             ]
         },
         {
@@ -87,10 +75,7 @@
             "nb_guesses": 1300,
             "periode": "24-25-26 Février",
             "prestations": [
-                "1 espace d’exposition",
-                "1 scéne principale",
-                "2 espaces de restaurations",
-                "1 site web dédié"
+                "HTML 43.6% JavaScript 35.3% CSS 21.1%"
             ]
         }
     ],
