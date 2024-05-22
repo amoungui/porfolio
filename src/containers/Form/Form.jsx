@@ -10,11 +10,11 @@ const mockContactApi = () => new Promise((resolve) => setTimeout(resolve, 1000))
 
 const Form = ({ onSuccess = null, onError = null }) => {
   const [sending, setSending] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767.98); // Initial check
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 767.98); // Initial check
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767.98);
+      //setIsMobile(window.innerWidth <= 767.98);
     };
     window.addEventListener("resize", handleResize);
     return () => {
