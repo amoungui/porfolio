@@ -6,7 +6,8 @@ import Button, { BUTTON_TYPES } from "../../components/Button/Button";
 
 import "./style.scss";
 
-const mockContactApi = () => new Promise((resolve) => setTimeout(resolve, 1000));
+const mockContactApi = () =>
+  new Promise((resolve) => setTimeout(resolve, 1000));
 
 const Form = ({ onSuccess = null, onError = null }) => {
   const [sending, setSending] = useState(false);
@@ -61,13 +62,16 @@ const Form = ({ onSuccess = null, onError = null }) => {
           </div>
         </div>
         <div className="col">
-            <Button type={BUTTON_TYPES.SUBMIT} disabled={sending} className={isMobile ? "mobile-device" : "desktop-device"}>
-              {sending ? "En cours" : "Envoyer"}
-            </Button>
+          <Button
+            type={BUTTON_TYPES.SUBMIT}
+            disabled={sending}
+            className={isMobile ? "mobile-device" : "desktop-device"}
+          >
+            {sending ? "En cours" : "Envoyer"}
+          </Button>
         </div>
       </form>
     </div>
-
   );
 };
 
