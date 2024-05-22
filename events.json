@@ -1,0 +1,102 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "type": "Immobilier",
+            "date": "2022-04-29T20:28:45.744Z",
+            "title": "Kasa",
+            "cover": "/assets/img/work1.jpg",
+            "description": "Plateforme immobilière.",
+            "github": "https://github.com/amoungui/kasa-using-reactjs",
+            "periode": "14-15-16 Avril",
+            "prestations": [
+                "JS/React 35.9% SCSS 34.5% CSS 26.7% HTML 2.9%"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "expérience digitale",
+            "date": "2022-01-29T20:28:45.744Z",
+            "title": "Print it",
+            "cover": "assets/img/work2.jpg",
+            "description": "Site vitrine d'une agence d'impression dans tous les formats",
+            "github": "https://github.com/amoungui/print-it",
+            "periode": "24-25-26 Février",
+            "prestations": [
+                "HTML 39.0% CSS 38.9% JavaScript 22.1%"
+            ]
+        },
+        {
+            "id": 3,
+            "type": "expérience digitale",
+            "date": "2022-01-29T20:28:45.744Z",
+            "title": "724Events",
+            "cover": "assets/img/work3.jpg",
+            "description": "Présentation des outils analytics aux professionnels du secteur ",
+            "github": "https://github.com/amoungui/Debuggez-une-application-React",
+            "periode": "24-25-26 Février",
+            "prestations": [
+                "JS/React 83% SCSS 12% CSS 3.4% HTML 1.6%"
+            ]
+        },
+        {
+            "id": 4,
+            "type": "Hotel",
+            "date": "2022-08-29T20:28:45.744Z",
+            "title": "Booki",
+            "cover": "/assets/img/work4.jpg",
+            "description": "Présentation des outils analytics aux professionnels du secteur ",
+            "github": "https://github.com/amoungui/booki",
+            "periode": "24-25-26 Février",
+            "prestations": [
+                "HTML 52.8% CSS 47.2%"
+            ]
+        },
+        {
+            "id": 5,
+            "type": "restaurant",
+            "date": "2022-04-29T20:28:45.744Z",
+            "title": "Ohmyfood",
+            "cover": "/assets/img/work5.jpg",
+            "description": "Présentation des plats des diffèrents restaurants ",
+            "github": "https://github.com/amoungui/ohmyfood",
+            "periode": "24-25-26 Février",
+            "prestations": [
+                "HTML 65.0% SCSS 35.0%"
+            ]
+        },
+        {
+            "id": 6,
+            "type": "Photographie",
+            "date": "2022-04-29T20:28:45.744Z",
+            "title": "Nina carducci",
+            "cover": "/assets/img/work6.jpg",
+            "description": "Présentation des outils analytics aux professionnels du secteur ",
+            "nb_guesses": 1300,
+            "periode": "24-25-26 Février",
+            "prestations": [
+                "HTML 43.6% JavaScript 35.3% CSS 21.1%"
+            ]
+        }
+    ],
+    "focus": [
+        {
+            "title": "World economic forum",
+            "description": "Oeuvre à la coopération entre le secteur public et le privé.",
+            "date": "2022-01-29T20:28:45.744Z",
+            "cover": "/images/evangeline-shaw-nwLTVwb7DbU-unsplash1.png"
+        },
+        {
+            "title": "Nordic design week",
+            "description": "Conférences sur le design de demain dans le digital",
+            "date": "2022-03-29T20:28:45.744Z",
+            "cover": "/images/teemu-paananen-bzdhc5b3Bxs-unsplash1.png"
+        },
+        {
+            "title": "Sneakercraze market",
+            "description": "Rencontres de spécialistes des Sneakers Européens.",
+            "date": "2022-05-29T20:28:45.744Z",
+            "cover": "/images/jakob-dalbjorn-cuKJre3nyYc-unsplash 1.png"
+        }
+    ]
+}
