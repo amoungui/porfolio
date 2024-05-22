@@ -52,14 +52,10 @@
   }
 }
 
-@media (max-width: 1024px) {
-
-}
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .ModalEvent {
-    width: 250px;
+    width: 300px;
     min-height: 369px;
     &__imageContainer {
       width: 100%;
@@ -69,12 +65,12 @@
     }
     &__title {
       width: 134px;
-      top: 130px;
-      padding: 16px;
+      top: 150px;
+      padding: 12px;
     }
     margin-bottom: 16px;
     &__imageContainer {
-      margin-bottom: 64px;
+      margin-bottom: 32px;
     }
   }
 }
