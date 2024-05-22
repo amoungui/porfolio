@@ -83,3 +83,15 @@ textarea {
     font-family: "Manrope", sans-serif;
   }  
 }
+
+/** tiny devise **/
+@media (max-width: 372px) {
+  input {
+    height: 60px;
+    min-width: 80%;
+  }
+  textarea {
+    height: 236px;
+    min-width: 80%;
+  }
+}

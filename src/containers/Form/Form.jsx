@@ -61,7 +61,7 @@ const Form = ({ onSuccess = null, onError = null }) => {
           </div>
         </div>
         <div className="col">
-            <Button type={BUTTON_TYPES.SUBMIT} disabled={sending} className={isMobile ? "mobile-device" : "desktop-device"}>
+            <Button type={BUTTON_TYPES.SUBMIT} disabled={sending}>
               {sending ? "En cours" : "Envoyer"}
             </Button>
         </div>
