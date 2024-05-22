@@ -75,7 +75,7 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .SelectContainer {
-    width: 154px;
+    width: 372px;
     min-height: 86px;
     position: relative;
     margin-left: 8px;
@@ -85,11 +85,11 @@
       margin-top: 4px;
     }
     &.large {
-      width: 212px;
+      width: 320px;
       .Select {
-        width: 212px;
+        width: 320px;
         ul {
-          width: 212px;
+          width: 320px;
         }
       }
     }
@@ -113,6 +113,27 @@
 
 /** tiny devise **/
 @media (max-width: 372px) {
+  .SelectContainer {
+    width: 372px;
+    min-height: 86px;
+    position: relative;
+    margin-left: 8px;
+    .label {
+      color: $white;
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+    &.large {
+      width: 218px;
+      .Select {
+        width: 218px;
+        ul {
+          width: 218px;
+        }
+      }
+    }
+  }
+
   .Select {
     width: 100%;
     min-height: 60px;
