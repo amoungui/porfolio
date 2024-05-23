@@ -66,7 +66,7 @@ const Home = () => {
                 class="home__blob-img"
                 x="50"
                 y="110"
-                href="assets/img/serge_white_bg.png"
+                href="assets/img/serge_white_bg.webp"
                 loading="lazy"
               />
             </g>
@@ -81,7 +81,7 @@ const Home = () => {
           <div className="about__img">
             <Image
               className="img-clip"
-              imageSrc="assets/img/Capture d'écran 2024-05-15 071954.png"
+              imageSrc="assets/img/Capture d'écran 2024-05-15 071954.webp"
               imageAlt="Image profil"
               loading="lazy"
             />
