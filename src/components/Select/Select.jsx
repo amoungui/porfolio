@@ -8,9 +8,9 @@ import "./style.scss";
 const Select = ({
   selection,
   onChange = null,
-  name="select",
-  titleEmpty=false,
-  label="",
+  name = "select",
+  titleEmpty = false,
+  label = "",
   type = "normal",
 }) => {
   const [value, setValue] = useState();
@@ -20,7 +20,7 @@ const Select = ({
     setValue(newValue);
     setCollapsed(true); // Fermez le menu déroulant après avoir sélectionné une valeur
   };
-  
+
   return (
     <div className={`SelectContainer ${type}`} data-testid="select-testid">
       {label && <div className="label">{label}</div>}
@@ -33,12 +33,12 @@ const Select = ({
             <>
               {!titleEmpty && (
                 <li onClick={() => changeValue(null)}>
-                  <input 
-                    defaultChecked={!value} 
-                    name="selected" 
+                  <input
+                    defaultChecked={!value}
+                    name="selected"
                     type="radio"
                     onChange={() => changeValue(null)} // Ajout du gestionnaire onChange
-                    />{" "}
+                  />{" "}
                   Toutes
                 </li>
               )}
@@ -65,6 +65,9 @@ const Select = ({
             e.preventDefault();
             setCollapsed(!collapsed);
           }}
+          aria-label={
+            collapsed ? "Ouvrir le menu déroulant" : "Fermer le menu déroulant"
+          } // Modifiez cette ligne
         >
           <Arrow />
         </button>
@@ -95,6 +98,6 @@ Select.propTypes = {
   titleEmpty: PropTypes.bool,
   label: PropTypes.string,
   type: PropTypes.string,
-}
+};
 
 export default Select;
