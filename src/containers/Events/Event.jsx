@@ -4,7 +4,7 @@ import { useData } from "../../contexts/DataContext";
 import Modal from "../Modal/Modal";
 import ModalEvent from "../ModalEvent/ModalEvent";
 
-const PER_PAGE = 9;
+const PER_PAGE = 6;
 
 const EventList = () => {
   const { data, error } = useData();
