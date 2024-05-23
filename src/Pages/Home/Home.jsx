@@ -67,6 +67,7 @@ const Home = () => {
                 x="50"
                 y="110"
                 href="assets/img/serge_white_bg.png"
+                loading="lazy"
               />
             </g>
           </svg>
@@ -82,6 +83,7 @@ const Home = () => {
               className="img-clip"
               imageSrc="assets/img/Capture d'écran 2024-05-15 071954.png"
               imageAlt="Image profil"
+              loading="lazy"
             />
           </div>
 

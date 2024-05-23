@@ -12,6 +12,7 @@ const Image = ({ imageSrc, imageAlt="image", dataTestid="feature-item-image-test
             src={process.env.PUBLIC_URL + imageSrc} // Source de l'image
             alt={imageAlt} // Texte alternatif de l'image
             className="feature-icon" // Classe CSS de l'image
+            loading="lazy"
         /> // Fin de l'élément img
     )
 }
