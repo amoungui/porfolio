@@ -42,7 +42,7 @@ const Field = ({
   }
   return (
     <div className="inputField">
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name} className="label">{label}</label>
       {component}
     </div>
   );
