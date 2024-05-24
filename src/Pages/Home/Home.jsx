@@ -66,7 +66,9 @@ const Home = () => {
                 class="home__blob-img"
                 x="50"
                 y="110"
-                href="assets/img/serge_white_bg.webp"
+                src="assets/img/serge_white_bg_small.webp"
+                srcSet="assets/img/serge_white_bg_small.webp 500w, assets/img/serge_white_bg_medium.webp 1000w, assets/img/serge_white_bg_large.webp 1500w"
+                sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
                 loading="lazy"
               />
             </g>
@@ -91,17 +93,18 @@ const Home = () => {
             <h2 className="about__subtitle">I'am Amoungui</h2>
             <p className="about__text">
               I am a passionate developer with a solid command of web
-              technologies. Here are my key skills: <br />- JavaScript: I have a deep
-              understanding of JavaScript and can create interactive and dynamic
-              web applications. <br />- ReactJS with Redux: I have worked on several
-              React projects, using Redux to manage application state
-              efficiently. <br />- HTML5 and CSS3: I am comfortable creating
-              responsive layouts and using the latest HTML5 and CSS3 features. <br />-
-              Sass: I use Sass to improve my CSS workflow and make my styles
-              more modular. <br />My goal is to create exceptional user experiences by
-              combining my technical skills with my creativity. If you are
-              looking for a passionate and versatile developer, I would be
-              delighted to collaborate with you!
+              technologies. Here are my key skills: <br />- JavaScript: I have a
+              deep understanding of JavaScript and can create interactive and
+              dynamic web applications. <br />- ReactJS with Redux: I have
+              worked on several React projects, using Redux to manage
+              application state efficiently. <br />- HTML5 and CSS3: I am
+              comfortable creating responsive layouts and using the latest HTML5
+              and CSS3 features. <br />- Sass: I use Sass to improve my CSS
+              workflow and make my styles more modular. <br />
+              My goal is to create exceptional user experiences by combining my
+              technical skills with my creativity. If you are looking for a
+              passionate and versatile developer, I would be delighted to
+              collaborate with you!
             </p>
           </div>
         </div>
