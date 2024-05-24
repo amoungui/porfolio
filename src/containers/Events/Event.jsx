@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
 import { useData } from "../../contexts/DataContext";
 import Modal from "../Modal/Modal";
 import ModalEvent from "../ModalEvent/ModalEvent";
+
+import "./style.scss";
 
 const PER_PAGE = 6;
 
@@ -13,7 +15,9 @@ const EventList = () => {
 
   useEffect(() => {
     let events = data?.events || [];
-    setFilteredEvents(events.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE));
+    setFilteredEvents(
+      events.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE)
+    );
   }, [currentPage, data]);
 
   return (
@@ -23,7 +27,7 @@ const EventList = () => {
         "loading"
       ) : (
         <>
-        {filteredEvents.map((event) => (
+          {filteredEvents.map((event) => (
             <Modal key={event.id} Content={<ModalEvent event={event} />}>
               {({ setIsOpened }) => (
                 <Card
@@ -31,18 +35,25 @@ const EventList = () => {
                   imageSrc={event.cover}
                   imageAlt={event.title} // Ajout de la prop imageAlt
                   dataTestid={`card-${event.id}`} // Ajout de la prop dataTestid
-                />             
+                />
               )}
             </Modal>
-        ))}
-        <div className="Pagination">
-          {[...Array(Math.ceil((data?.events.length || 0) / PER_PAGE))].map((_, n) => (
-            // eslint-disable-next-line react/no-array-index-key, jsx-a11y/anchor-is-valid
-            <a key={`page-link-${n}`} href="#" onClick={() => setCurrentPage(n + 1)}>
-              {n + 1}
-            </a>
           ))}
-        </div>
+          <div className="Pagination">
+            {[...Array(Math.ceil((data?.events.length || 0) / PER_PAGE))].map(
+              (_, n) => (
+                // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                <a
+                  key={`page-link-${n}`}
+                  href="#"
+                  onClick={() => setCurrentPage(n + 1)}
+                  className="paginate"
+                >
+                  {n + 1}
+                </a>
+              )
+            )}
+          </div>
         </>
       )}
     </>

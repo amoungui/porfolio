@@ -17,7 +17,7 @@ function Header() {
         <header className="l-header">
             <nav className="nav bd-grid">
                 <div>
-                    <ScrollLink to="/" smooth={true} className="nav__logo">Amoungui.</ScrollLink>
+                    <ScrollLink to="/" smooth={true} className="nav__link">Amoungui.</ScrollLink>
                 </div>
     
                 <div className={`nav__menu ${isMenuOpen ? 'show' : ''}`} id="nav-menu">

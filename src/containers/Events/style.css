@@ -1,0 +1,10 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #574545;
+}
+.Pagination .paginate {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
