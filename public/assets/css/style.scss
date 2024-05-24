@@ -12,6 +12,7 @@
     --hue-color: 224;
     --first-color: hsl(var(--hue-color), 89%, 60%);
     --second-color: hsl(var(--hue-color), 56%, 12%);
+    --logo-color: hsl(var(--hue-color), 56%, 70%);
     --third-color: #7f00ff;
 
     /*===== Fuente y tipografia =====*/
@@ -154,7 +155,7 @@ img{
         }
     }
     &__logo{
-        color: var(--second-color);
+        color: var(--logo-color);
     }
     &__toggle{
         color: var(--second-color);

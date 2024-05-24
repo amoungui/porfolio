@@ -16,11 +16,14 @@
   .contact_form {
     width: 100%;
   }
+  .contact_select {
+    width: 40%;
+  }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .contact_form {
-    width: 100%;
+    width: 372px;
     display: flex;
     flex-direction: column;
   }
@@ -29,5 +32,13 @@
   }
   .mobile-device {
     display: block;
+  }
+}
+/** tiny devise **/
+@media (max-width: 372px) {
+  .contact_form {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -26,10 +26,10 @@
   background-color: $primary;
   clip-path: ellipse(100% 100% at 50% 100%);
   .section-title{
-    color: #ffff;
+    color: #ffffff;
 
     &::after{
-        background-color: #fff;
+      background-color: #ffffff;
     }
   }  
 }
