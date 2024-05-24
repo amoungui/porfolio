@@ -19,22 +19,28 @@ const Field = ({
       component = (
         <input
           type="text"
-          id={name}
-          name={name}
+          id={`${name}-${label.toLowerCase()}`}
+          name={`${name}-${label.toLowerCase()}`}
           placeholder={placeholder}
           data-testid="field-testid"
         />
       );
       break;
     case FIELD_TYPES.TEXTAREA:
-      component = <textarea id={name} name={name} data-testid="field-testid" />;
+      component = (
+        <textarea
+          id={`${name}-${label.toLowerCase()}`}
+          name={`${name}-${label.toLowerCase()}`}
+          data-testid="field-testid"
+        />
+      );
       break;
     default:
       component = (
         <input
           type="text"
-          id={name}
-          name={name}
+          id={`${name}-${label.toLowerCase()}`}
+          name={`${name}-${label.toLowerCase()}`}
           placeholder={placeholder}
           data-testid="field-testid"
         />
@@ -42,7 +48,9 @@ const Field = ({
   }
   return (
     <div className="inputField">
-      <label htmlFor={name} className="label">{label}</label>
+      <label htmlFor={`${name}-${label.toLowerCase()}`} className="label">
+        {label}
+      </label>
       {component}
     </div>
   );

@@ -66,14 +66,11 @@ const Home = () => {
                 class="home__blob-img"
                 x="50"
                 y="110"
-                src="assets/img/serge_white_bg_small.webp"
-                srcSet="assets/img/serge_white_bg_small.webp 500w, assets/img/serge_white_bg_medium.webp 1000w, assets/img/serge_white_bg_large.webp 1500w"
-                sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
-                loading="lazy"
+                href="assets/img/serge_white_bg.webp"
               />
             </g>
           </svg>
-        </div>
+        </div>  
       </section>
 
       <section className="about section" id="about">
