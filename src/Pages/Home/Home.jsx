@@ -44,13 +44,13 @@ const Home = () => {
         </div>
 
         <div className="home__social">
-          <Link to="/" className="home__social-icon" aria-label="LinkedIn">
+          <Link to="https://www.linkedin.com/in/serge-mbele-amoungui-7185a9224/" className="home__social-icon" aria-label="LinkedIn">
             <i class="bx bxl-linkedin"></i>
           </Link>
-          <Link to="/" className="home__social-icon" aria-label="Instagram">
+          <Link to="https://www.instagram.com/jazzmastaz/" className="home__social-icon" aria-label="Instagram">
             <i class="bx bxl-instagram"></i>
           </Link>
-          <Link to="/" className="home__social-icon" aria-label="GitHub">
+          <Link to="https://github.com/amoungui" className="home__social-icon" aria-label="GitHub">
             <i class="bx bxl-github"></i>
           </Link>
         </div>

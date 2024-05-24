@@ -23,7 +23,7 @@ const EventList = () => {
         "loading"
       ) : (
         <>
-          {filteredEvents.map((event) => (
+        {filteredEvents.map((event) => (
             <Modal key={event.id} Content={<ModalEvent event={event} />}>
               {({ setIsOpened }) => (
                 <Card
@@ -34,15 +34,15 @@ const EventList = () => {
                 />             
               )}
             </Modal>
+        ))}
+        <div className="Pagination">
+          {[...Array(Math.ceil((data?.events.length || 0) / PER_PAGE))].map((_, n) => (
+            // eslint-disable-next-line react/no-array-index-key, jsx-a11y/anchor-is-valid
+            <a key={`page-link-${n}`} href="#" onClick={() => setCurrentPage(n + 1)}>
+              {n + 1}
+            </a>
           ))}
-          <div className="Pagination">
-            {[...Array(Math.ceil((data?.events.length || 0) / PER_PAGE))].map((_, n) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <a key={`page-link-${n}`} href="#events" onClick={() => setCurrentPage(n + 1)}>
-                {n + 1}
-              </a>
-            ))}
-          </div>
+        </div>
         </>
       )}
     </>
