@@ -10,21 +10,21 @@ function Footer() {
           className="footer__icon"
           aria-label="Facebook"
         >
-          <i class="bx bxl-facebook"></i>
+          <i className="bx bxl-facebook"></i>
         </Link>
         <Link
           to="https://www.instagram.com/jazzmastaz/"
           className="footer__icon"
           aria-label="Instagram"
         >
-          <i class="bx bxl-instagram"></i>
+          <i className="bx bxl-instagram"></i>
         </Link>
         <Link
           to="https://x.com/Amoungui"
           className="footer__icon"
           aria-label="Twitter"
         >
-          <i class="bx bxl-twitter"></i>
+          <i className="bx bxl-twitter"></i>
         </Link>
       </div>
       <p className="footer__copy">© Amoungui. All rigths reserved</p>
