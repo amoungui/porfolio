@@ -12,6 +12,7 @@ const Field = ({
   label = "",
   name = "field-name",
   placeholder = "",
+  onChange,
 }) => {
   let component;
   switch (type) {
@@ -23,6 +24,7 @@ const Field = ({
           name={`${name}-${label.toLowerCase()}`}
           placeholder={placeholder}
           data-testid="field-testid"
+          onChange={onChange}
         />
       );
       break;
@@ -32,6 +34,7 @@ const Field = ({
           id={`${name}-${label.toLowerCase()}`}
           name={`${name}-${label.toLowerCase()}`}
           data-testid="field-testid"
+          onChange={onChange}
         />
       );
       break;
@@ -43,6 +46,7 @@ const Field = ({
           name={`${name}-${label.toLowerCase()}`}
           placeholder={placeholder}
           data-testid="field-testid"
+          onChange={onChange}
         />
       );
   }
@@ -61,6 +65,7 @@ Field.propTypes = {
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export default Field;
