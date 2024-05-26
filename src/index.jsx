@@ -6,6 +6,9 @@ import Home from './Pages/Home/Home'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Error from './components/Error/Error'
+import { register } from './serviceWorkerRegistration';
+
+register();
 
 function MainComponent() {
     useEffect(() => {
