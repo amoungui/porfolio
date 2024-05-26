@@ -19,8 +19,13 @@ const Home = () => {
   const el = useRef(null);
 
   useEffect(() => {
+    // "Backend Developer",
     const typed = new Typed(el.current, {
-      strings: ["coder", "Frontend Developer", "Software Engineer"],
+      strings: [
+        "coder",
+        "Frontend Developer",
+        "Software Engineer",
+      ],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
@@ -34,7 +39,7 @@ const Home = () => {
   }, []);
   return (
     <main>
-      <section className="home bd-grid" id="home">
+      <section className="home bd-grid" id="home" data-testid="home">
         <div className="home__data">
           <h1 className="home__title">
             Hi, I'am <br />
@@ -90,7 +95,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="about section" id="about">
+      <section className="about section" id="about" data-testid="about">
         <h2 className="section-title">About</h2>
 
         <div className="about__container bd-grid">
@@ -124,7 +129,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="skills section" id="skills">
+      <section className="skills section" id="skills" data-testid="skills">
         <h2 className="section-title">Skills</h2>
 
         <div className="skills__container bd-grid">
@@ -174,7 +179,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="work section" id="work">
+      <section className="work section" id="work" data-testid="work">
         <h2 className="section-title">Work</h2>
 
         <div className="work__container bd-grid">
@@ -182,7 +187,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact section FormContainer" id="contact">
+      <section className="contact section FormContainer" id="contact" data-testid="contact">
         <h2 className="section-title">Contact</h2>
 
         <div className="bd-grid">
