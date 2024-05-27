@@ -15,13 +15,14 @@ const Field = ({
   onChange,
 }) => {
   let component;
+  const fieldName = `${name}-${label.toLowerCase().replace(/\s/g, '-')}`;
   switch (type) {
     case FIELD_TYPES.INPUT_TEXT:
       component = (
         <input
           type="text"
-          id={`${name}-${label.toLowerCase()}`}
-          name={`${name}-${label.toLowerCase()}`}
+          id= {fieldName}
+          name={fieldName}
           placeholder={placeholder}
           data-testid="field-testid"
           onChange={onChange}
@@ -31,8 +32,8 @@ const Field = ({
     case FIELD_TYPES.TEXTAREA:
       component = (
         <textarea
-          id={`${name}-${label.toLowerCase()}`}
-          name={`${name}-${label.toLowerCase()}`}
+          id={fieldName}
+          name={fieldName}
           data-testid="field-testid"
           onChange={onChange}
         />
@@ -42,8 +43,8 @@ const Field = ({
       component = (
         <input
           type="text"
-          id={`${name}-${label.toLowerCase()}`}
-          name={`${name}-${label.toLowerCase()}`}
+          id={fieldName}
+          name={fieldName}
           placeholder={placeholder}
           data-testid="field-testid"
           onChange={onChange}
@@ -52,7 +53,7 @@ const Field = ({
   }
   return (
     <div className="inputField">
-      <label htmlFor={`${name}-${label.toLowerCase()}`} className="label">
+      <label htmlFor={fieldName} className="label">
         {label}
       </label>
       {component}
