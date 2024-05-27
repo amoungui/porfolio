@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Modal from "../../containers/Modal/Modal";
 import Form from "../../containers/Form/Form";
 import SkillsCard from "../../components/SkillsCard/SkillsCard";
-import EventList from "../../containers/Events/Event";
+import EventList from "../../containers/Events/EventList";
 import Image from "../../components/Image/Image";
 import Typed from "typed.js";
 
