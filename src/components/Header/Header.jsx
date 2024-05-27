@@ -40,7 +40,7 @@ function Header() {
                     </ul>
                 </div>
     
-                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu} role='button'>
                     <i className="bx bx-menu"></i>
                 </div>
             </nav>
