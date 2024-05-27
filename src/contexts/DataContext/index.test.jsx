@@ -1,5 +1,6 @@
 // Importation des fonctions 'render' et 'screen' depuis la bibliothèque '@testing-library/react'
-import { render, screen } from "@testing-library/react";
+import { render, screen} from "@testing-library/react";
+
 
 // Importation de l'API, du fournisseur de données et du hook d'utilisation des données depuis le contexte de données
 import { api, DataProvider, useData } from "./index";
