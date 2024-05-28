@@ -21,11 +21,7 @@ const Home = () => {
   useEffect(() => {
     // "Backend Developer",
     const typed = new Typed(el.current, {
-      strings: [
-        "coder",
-        "Frontend Developer",
-        "Software Engineer",
-      ],
+      strings: ["coder", "Frontend Developer", "Software Engineer"],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
@@ -136,9 +132,13 @@ const Home = () => {
           <div>
             <h2 className="skills__subtitle">Profesional Skills</h2>
             <p className="skills__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              optio id vero amet, alias architecto consectetur error eum eaque
-              sit.
+              Découvrez ma palette de compétences techniques, où je fusionne
+              créativité et fonctionnalité. Ma maîtrise en HTML5, CSS3,
+              Javascript, et ReactJS avec Redux, me permet de créer des sites web dynamiques
+              et réactifs. De plus, ma connaissance approfondie du SEO assure
+              une visibilité optimale de vos projets sur le web. Explorez cette
+              section pour en savoir plus sur mes compétences et comment je peux
+              transformer vos idées en réalité digitale.
             </p>
             <SkillsCard
               skillsName="HTML5"
@@ -187,7 +187,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact section FormContainer" id="contact" data-testid="contact">
+      <section
+        className="contact section FormContainer"
+        id="contact"
+        data-testid="contact"
+      >
         <h2 className="section-title">Contact</h2>
 
         <div className="bd-grid">
