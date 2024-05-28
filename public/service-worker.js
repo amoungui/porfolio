@@ -18,12 +18,6 @@ self.addEventListener('install', (event) => {
         '/path/to/style.min.css',
         '/assets/img/Capture d\'écran 2024-05-15 071954.webp',
         '/assets/img/serge_white_bg.webp',
-        '/assets/img/work1.webp',
-        '/assets/img/work2.webp',
-        '/assets/img/work3.webp',
-        '/assets/img/work4.webp',
-        '/assets/img/work5.webp',
-        '/assets/img/work6.webp',
       ]);
     })
   );
