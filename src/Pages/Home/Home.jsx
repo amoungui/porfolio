@@ -105,7 +105,7 @@ const Home = () => {
           </div>
 
           <div>
-            <h2 className="about__subtitle">I'am Amoungui</h2>
+            <h2 className="about__subtitle">Je me nomme Amoungui</h2>
             <p className="about__text">
               Je suis un développeur passionné avec une solide maîtrise des technologies du web
               . Voici mes compétences clés : <br />- JavaScript : J'ai un
