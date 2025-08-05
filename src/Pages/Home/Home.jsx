@@ -105,19 +105,15 @@ const Home = () => {
           </div>
 
           <div>
-            <h2 className="about__subtitle">Je me nomme Amoungui</h2>
+            <h2 className="about__subtitle">My name is Amoungui</h2>
             <p className="about__text">
-              Je suis un développeur passionné avec une solide maîtrise des technologies du web
-              . Voici mes compétences clés : <br />- JavaScript : J'ai un
-              compréhension approfondie de JavaScript et peut créer des
-              applications Web dynamiques. <br />- ReactJS avec Redux : j'ai
-              travaillé sur plusieurs projets React, en utilisant Redux pour gérer
-              état de l'application de manière efficace. <br />- HTML5 et CSS3 : je suis
-              à l'aise dans la création de mises en page réactives et dans l'utilisation du dernier HTML5
-              et fonctionnalités CSS3. <br />- Sass : J'utilise Sass pour améliorer mon CSS
-              flux de travail et rendre mes styles plus modulaires. <br /> Si vous recherchez un
-              développeur passionné et polyvalent, je serais ravi de
-              collaborez avec vous !
+              I am a passionate developer with a solid mastery of web technologies. 
+              Here are my key skills: 
+              <br/>- JavaScript: I have an in-depth understanding of JavaScript and can create dynamic web applications. 
+              <br/>- ReactJS with Redux: I have worked on several React projects, using Redux to manage application state effectively. 
+              <br/>- HTML5 and CSS3: I am comfortable creating responsive layouts and using the latest HTML5 and CSS3 features. 
+              <br/>- Sass: I use Sass to enhance my CSS workflow and make my styles more modular. 
+              <br/>If you are looking for a passionate and versatile developer, I would be delighted to collaborate with you!
             </p>
           </div>
         </div>
