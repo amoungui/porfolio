@@ -130,13 +130,7 @@ const Home = () => {
           <div>
             <h2 className="skills__subtitle">Profesional Skills</h2>
             <p className="skills__text">
-              Découvrez ma palette de compétences techniques, où je fusionne
-              créativité et fonctionnalité. Ma maîtrise en HTML5, CSS3,
-              Javascript, et ReactJS avec Redux, me permet de créer des sites web dynamiques
-              et réactifs. De plus, ma connaissance approfondie du SEO assure
-              une visibilité optimale de vos projets sur le web. Explorez cette
-              section pour en savoir plus sur mes compétences et comment je peux
-              transformer vos idées en réalité digitale.
+              Discover my palette of technical skills, where I blend creativity and functionality. My expertise in HTML5, CSS3, Javascript, and ReactJS with Redux enables me to create dynamic and responsive websites. Additionally, my in-depth knowledge of SEO ensures optimal visibility for your projects on the web, as well as my backend development skills with technologies like Python (Django, FastAPI). Explore this section to learn more about my skills and how I can transform your ideas into digital reality.
             </p>
             <SkillsCard
               skillsName="HTML5"
@@ -178,7 +172,7 @@ const Home = () => {
               skillsPercentage=""
               classNameBxl="bx bxs-paint skills__icon"
               classNameSkill="skills__bar skills__backend"
-              key={`SkillsCard-4-item-${uuidv4()}`}
+              key={`SkillsCard-5-item-${uuidv4()}`}
             />
           </div>
         </div>
