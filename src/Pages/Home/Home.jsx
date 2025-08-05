@@ -168,7 +168,7 @@ const Home = () => {
               skillsPercentage=""
               classNameBxl="bx bxs-paint skills__icon"
               classNameSkill="skills__bar skills__python"
-              key={`SkillsCard-5-item-${uuidv4()}`}
+              key={`SkillsCard-1-item-${uuidv4()}`}
             />
           </div>
         </div>
