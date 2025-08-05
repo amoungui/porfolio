@@ -173,6 +173,13 @@ const Home = () => {
               classNameSkill="skills__bar skills__react"
               key={`SkillsCard-4-item-${uuidv4()}`}
             />
+            <SkillsCard
+              skillsName="Backend Developer (Python/Django/FastAPI)"
+              skillsPercentage=""
+              classNameBxl="bx bxs-paint skills__icon"
+              classNameSkill="skills__bar skills__react"
+              key={`SkillsCard-4-item-${uuidv4()}`}
+            />
           </div>
         </div>
       </section>
