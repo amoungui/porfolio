@@ -164,9 +164,9 @@ const Home = () => {
               key={`SkillsCard-4-item-${uuidv4()}`}
             />
             <SkillsCard
-              skillsName="Backend Developer (Python/Django/FastAPI)"
+              skillsName="BACKEND/PYTHON (Django/FastAPI)"
               skillsPercentage=""
-              classNameBxl="bx bxs-python skills__icon"
+              classNameBxl="bx bxl-python skills__icon"
               classNameSkill="skills__bar skills__python"
               key={`SkillsCard-1-item-${uuidv4()}`}
             />
